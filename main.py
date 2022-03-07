@@ -1,6 +1,8 @@
 import turtle
-
-########### Your Code here ##############
+wn = turtle.Screen()
+tom = turtle.Turtle()
+fred.goto(50,60)
+wn.exitonclick()
 # You should only have functions here
 # If you have anything outside of a function, 
 # then you do not fully understand functions
