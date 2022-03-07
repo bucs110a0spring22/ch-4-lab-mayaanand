@@ -1,17 +1,51 @@
 import turtle
-wn = turtle.Screen()
-tom = turtle.Turtle()
-fred.goto(50,60)
-wn.exitonclick()
+import math 
 # You should only have functions here
 # If you have anything outside of a function, 
 # then you do not fully understand functions
 # and should review how they work or ask for help
+def setupWindow(screen_object) :
+  '''
+  Sets up the region the turtle screen is to focus on
+  screen_object: (Screen) screen object
+  return: None
+  '''
+  screen_object.setworldcoordinates(-360, -1, 360, 1)
+  screen_object.bgcolor("white")
+def setupAxis(turtle_object) :
+  '''
+  Draws x and y axes of graph on turtle screen
+  turtle_object: (Turtle) turtle object
+  return: None
+  '''
+  turtle_object.up()
+  turtle_object.goto(0,0)
+  turtle_object.color("blue")
+  turtle_object.down()
 
-
-
-
-
+  turtle_object.goto(370,0)
+  turtle_object.goto(-370,0)
+  turtle_object.goto(0,0)
+  turtle_object.goto(0,-2)
+  turtle_object.goto(0,2)
+def drawSineCurve(turtle_object) :
+  '''
+  Draws sine curve on turtle screen from [-360, 360]
+  turtle_object: (Turtle) turtle object
+  return: None
+  '''
+def drawCosineCurve(myturtle=None) :
+  '''
+  Draws cosine curve on turtle screen from [-360, 360]
+  turtle_object: (Turtle) turtle object
+  return: None
+  '''
+def drawTangentCurve (myturtle=None) :
+  '''
+  Draws tangent curve on turtle screen from [-360, 360]
+  turtle_object: (Turtle) turtle object
+  return: None
+  '''
 
 
 
