@@ -34,6 +34,9 @@ def drawSineCurve(turtle_object) :
   turtle_object: (Turtle) turtle object
   return: None
   '''
+  for i in range(360):
+    y = math.sin(math.radians(i))
+    turtle_object.goto(i,y)
 def drawCosineCurve(myturtle=None) :
   '''
   Draws cosine curve on turtle screen from [-360, 360]
