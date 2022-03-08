@@ -41,19 +41,32 @@ def drawSineCurve(turtle_object) :
     y = math.sin(math.radians(i))
     turtle_object.goto(i,y)
     turtle_object.down()
-def drawCosineCurve(myturtle=None) :
+def drawCosineCurve(turtle_object = None) :
   '''
   Draws cosine curve on turtle screen from [-360, 360]
   turtle_object: (Turtle) turtle object
   return: None
   '''
-def drawTangentCurve (myturtle=None) :
+  turtle_object.up()
+  turtle_object.goto(0,0)
+  
+  for i in range(-360, 360):
+    y = math.cos(math.radians(i))
+    turtle_object.goto(i,y)
+    turtle_object.down()
+def drawTangentCurve (turtle_object = None) :
   '''
   Draws tangent curve on turtle screen from [-360, 360]
   turtle_object: (Turtle) turtle object
   return: None
   '''
+  turtle_object.up()
+  turtle_object.goto(0,0)
 
+  for i in range(-360,360):
+    y = math.tan(math.radians(i))
+    turtle_object.goto(i,y)
+    turtle_object.down()
 
 
 ##########  Do Not Alter Any Code Past Here ########
